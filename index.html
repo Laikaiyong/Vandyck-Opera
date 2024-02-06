@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VandyckOpera - Music Generator</title>
+
+    <link rel="shortcut icon" href="Unknown.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/@magenta/music@1.0.0"></script>
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap"
+      rel="stylesheet" />
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="content center" id="wait">Brewing...</div>
+    <div class="content center" id="start" onclick="start()">
+        VandyckOpera
+        <span class="glyphicon glyphicon-play"></span>
+    </div>
+    <div class="content" id="playing">
+
+
+      <div class="button choice" id="next" onclick="sampleAndPlayForever()">
+        Next Track
+      </div>
+      <div class="button choice" onclick="changeTempo(1)">Faster (+)</div>
+      <div class="button choice" onclick="changeTempo(-1)">Slower (-)</div>
+
+      <marquee behavior="alternate" id="count" class="upspace" direction="right">0 TRIOS</marquee>
+      <marquee behavior="alternate" id="tempo">bpm</marquee>
+      <div class="button ending" onclick="stop()">END Generation</div>
+    </div>
+  </body>
+</html>

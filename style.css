@@ -1,0 +1,54 @@
+body {
+    background: linear-gradient(to right bottom, white 50%, #BCC4EA 50%);
+    color:black;
+  }
+  .content {
+    padding: 40px 0;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-family: 'Protest Guerrilla';
+    font-size: 28px;
+  }
+  
+  #start, marquee.button, div.button {
+    cursor: pointer;
+  }
+  
+  #start:hover, div.button:hover, marquee.button:hover {
+      color: black
+  }
+  
+  div.button {
+    text-align: center;
+  }
+  
+  marquee, div.button {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+
+  center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ending {
+    margin-top: 60px;
+  }
+
+  .choice {
+    background-color: #8699f9;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .upspace {
+    margin-top: 20px;
+  }
